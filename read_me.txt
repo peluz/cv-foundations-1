@@ -1,6 +1,8 @@
 Estrutura do projeto:
 	Arquivo proj1.py com o codigo em python
 	Diretório data com as imagens default
+	Arquivo pdf com relatório
+	Diretório tex_src com código fonte latex do relatório
 
 Requisitos:
 	Python (Versão usada foi a 3.5.2)
