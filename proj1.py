@@ -88,8 +88,8 @@ def magicVideo(file=None):
         if ret:
             if value is not None:
                 img[np.linalg.norm(img.astype(float) - value.astype(float), axis=-1) < 13] = (0, 0, 255)
-        cv2.imshow('image', img)
-        if cv2.waitKey(delay) & 0xFF == 27:
+            cv2.imshow('image', img)
+        if cv2.waitKey(delay) & 0xFF == 27 or not ret:
             break
 
     cap.release()
@@ -110,8 +110,8 @@ def magicCam(file=None):
         if ret:
             if value is not None:
                 img[np.linalg.norm(img.astype(float) - value.astype(float), axis=-1) < 13] = (0, 0, 255)
-        cv2.imshow('image', img)
-        if cv2.waitKey(delay) & 0xFF == 27:
+            cv2.imshow('image', img)
+        if cv2.waitKey(delay) & 0xFF == 27 or not ret:
             break
 
     cap.release()
