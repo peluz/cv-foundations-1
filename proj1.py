@@ -11,6 +11,7 @@ parser.add_argument("requisito", type=int, nargs=1, choices=range(1, 5),
 parser.add_argument("-file", nargs="?", default=None, metavar="path/to/file",
                     help="Caminho para a imagem/vídeo")
 
+
 def openImage(file):
     if file is None:
         filename = "data/default_image.png"
